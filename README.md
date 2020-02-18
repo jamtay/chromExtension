@@ -4,25 +4,32 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-* [Usage](#usage)
+* [Manifest file](#manifest-file)
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Chrome extension coronavirus][product-video]](video.mov)
+This is a simple chrome extension that has both an example of a widget and a rule based on your url.  The widget is a simple countdown timer.  See files:
+
+* popup.html
+* popup.js
+* popup.css
+* image.png (for an example)
+
+The url example is based on https://www.youtube.com/watch?v=rymG9UmPuhM and changes the style of any text with the word "coronavirus" to flash rainbows colours.  See files:
+
+* script.js
+* styles.css
+* video.mov (for an example)
+
+### Demo for changing text on a screen
+
+![Chrome extension coronavirus](video.mov)
+
+### Demo for adding a countdown widget
 ![Chrome extension countdown](image.png)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
 
@@ -31,17 +38,18 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 * [CSS](https://laravel.com)
 
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Upload your chrome extension using developer mode. See:
+https://support.google.com/chrome/a/answer/2714278?hl=en
 
+Then test it out.
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- Manifest file -->
+## Manifest file
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Every chrome extension needs a manifest.json file.  
+The "content_scripts" section is used for defining the scripts used to execute on each webpage. In here you can specify urls to include (in this example every url is included), urls to ignore (in this example we ignore the google search results as for some reason this was broken when not ignored).  We also design some styles (which are used when updating a word using those styles) and the JS file which will execute on the matching url.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The "browser_action" section is used for the widget and defines the html to render in the widget.  The icon can also be rendered this way.
