@@ -11,7 +11,7 @@
 ## About The Project
 
 [![Chrome extension coronavirus][product-video]](video.mov)
-[![Chrome extension countdown][product-screenshot]](image.png)
+![Chrome extension countdown](image.png)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
