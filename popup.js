@@ -1,5 +1,6 @@
 
-//May 2nd 2020 countdown (or can use new Date("some date").getTime(). Will need to fix for daylight savings time (or make better to handle this)
+//May 2nd 2020 countdown (or can use new Date("some date").getTime().
+//Will need to fix for daylight savings time (or make better to handle this)
 const countdownDate = 1588377600000;
 
 // countdown
