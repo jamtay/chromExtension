@@ -25,7 +25,7 @@ The url example is based on https://www.youtube.com/watch?v=rymG9UmPuhM and chan
 
 ### Demo for changing text on a screen
 
-![Chrome extension coronavirus](video.mov)
+![Chrome extension coronavirus](video.gif)
 
 ### Demo for adding a countdown widget
 ![Chrome extension countdown](image.png)
